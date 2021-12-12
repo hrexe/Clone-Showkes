@@ -318,6 +318,9 @@ a {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .fourth .all .middle .box {
@@ -332,6 +335,10 @@ a {
 .fourth .all .middle .box h4 {
   color: #727272;
   margin-top: 10px;
+}
+
+.fourth .all .middle .box:nth-child(1) i, .fourth .all .middle .box:nth-child(1) h4 {
+  color: #000;
 }
 
 .fourth .all .bottom {
@@ -540,6 +547,13 @@ a {
   border-radius: 100%;
   color: #fff;
   margin: 15px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.footer .footer-icon i:hover {
+  color: #000;
+  border: 1px solid #000;
 }
 
 .footer p {

@@ -254,6 +254,8 @@ a{
         .middle{
             display: flex;
             text-align: center;
+            justify-content: center;
+            
            .box{
                margin: 0px 10px;
                i{
@@ -264,8 +266,14 @@ a{
                    color: #727272;
                    margin-top: 10px;
                }
-            
-           }
+              
+           
+        }
+        .box:nth-child(1) {
+            i, h4{
+                color: #000;
+            }
+       }
         }
         .bottom{
             display: flex;
@@ -437,7 +445,13 @@ a{
             border-radius: 100%;
             color: #fff;
             margin: 15px;
+            transition: .4s;
+            &:hover{
+                color: #000;
+                border: 1px solid #000;
+            }   
         }
+        
     }
     p{
         color: #fff;
